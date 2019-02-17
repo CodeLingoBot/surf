@@ -76,7 +76,7 @@ func (at *Asset) Id() string {
 	return at.ID
 }
 
-// Type returns the asset type.
+// AssetType: Type returns the asset type.
 func (at *Asset) AssetType() AssetType {
 	return at.Type
 }

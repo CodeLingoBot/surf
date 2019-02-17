@@ -297,7 +297,7 @@ func (f *Form) Click(button string) error {
 	return f.send(button, f.buttons[button][0])
 }
 
-// Click submits the form by clicking the button with the given name and value.
+// ClickByValue: Click submits the form by clicking the button with the given name and value.
 func (f *Form) ClickByValue(name, value string) error {
 	if _, ok := f.buttons[name]; !ok {
 		return errors.NewInvalidFormValue(
